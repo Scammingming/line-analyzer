@@ -100,31 +100,25 @@ function getEquation(x1, y1, x2, y2) {
   console.log(b);
   if (m == 1 && b != 0) {
     let equation = `y = x + ` + b;
-    console.log(`try 1`);
     return equation;
   }
   if (m == 1) {
     let equation = `y = x`;
-    console.log(`try 1`);
     return equation;
   }
   if (m == 0) {
     let equation = `y = ` + b;
-    console.log(`try 2`);
     return equation;
   }
   if (b < 0) {
     let equation = `y = ` + m + `x` + b;
-    console.log(`try 3`);
     return equation;
   }
   if (b == 0) {
     let equation = `y = ` + m + `x`;
-    console.log(`try 4`);
     return equation;
   } else {
     let equation = `y = ` + m + `x + ` + b;
-    console.log(`try 5`);
     return equation;
   }
 }
