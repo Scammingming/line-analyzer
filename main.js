@@ -85,6 +85,7 @@ function getPointSlope(x1, y1, x2, y2) {
   if (x1 == x2) return `x = ` + x1;
   if (y1 == y2) return `y = ` + y1;
   if (m == 0) return `y-` + y1 + `= 0`;
+  if (m == 1) return `y-` + y1 + `= x + ` + x1;
   if (x1 < 0) return `y-` + y1 + `= ` + m + `(x + ` + Math.abs(x1) + `)`;
   if (x1 == 0 && y1 != 0) return `y-` + y1 + `= ` + m + `(x)`;
   if (y1 < 0) return `y+` + Math.abs(y1) + `= ` + m + `(x - ` + x1 + `)`;
